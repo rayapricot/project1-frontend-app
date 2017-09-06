@@ -13,6 +13,13 @@
       body {
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
       }
+      table {
+	      border-collapse: collapse;
+      }
+      td {
+	      border: solid 1px;
+	      padding: 0.5em;
+      }
     </style>
 
     <!-- タイトル -->
@@ -24,25 +31,65 @@
 
       <!-- 自分用のHTMLをここに書く -->
 
-      <h1>Hello, world!</h1>
+      <h1>ＢＩＭ計算！</h1>
 
-      <p>これはHTMLのサンプルです。</p>
-
+      
       <h2>入力</h2>
       <form name="mainForm">
         <div class="form-group">
-          <label for="input1">入力1</label>
+          <label for="input1">体重（ｋｇ）</label>
           <input id="input1" class="form-control" type="text" onchange="answer()"/>
         </div>
 
         <div class="form-group">
-          <label for="input2">入力2</label>
+          <label for="input2">身長（ｍ）</label>
           <input id="input2" class="form-control" type="text" onchange="answer()"/>
+        </div>
+
+        <div class="form-group">
+          <label for='input3'>身長（ｍ）</label>
+          <input id="input3" class="form-control" type="text" onchange="answer()"/>
         </div>
       </form>
 
-      <h2>出力</h2>
-      <p id="output">ここに出力したい</p>
+      <h2>ＢＩＭ</h2>
+      <p id="output">値</p>
+
+      <table>
+        <tr>
+          <td>状態</td>
+          <td>BIM</td>
+        </tr>
+        
+        <tr>
+          <td>低体重（痩せ型）</td>
+          <td>18.5未満</td>
+        </tr>
+
+         <tr>
+          <td>普通</td>
+          <td>18.5~25未満</td>
+        </tr>
+        
+        <tr>
+          <td>肥満（1度）</td>
+          <td>25~30未満</td>
+        </tr>
+
+         <tr>
+          <td>肥満（2度）</td>
+          <td>30~35未満</td>
+        </tr>
+        
+        <tr>
+          <td>肥満（3度）</td>
+          <td>35~40未満</td>
+        </tr>
+
+        <tr>
+          <td>肥満（4度）</td>
+          <td>40以上</td>
+        </tr>
       
       <!-- 自分用のHTMLはここまで -->
 
