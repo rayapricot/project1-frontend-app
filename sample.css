@@ -1,16 +1,64 @@
-  body {
+body {
         font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
-      }
-      table {
-	      border-collapse: collapse;
-      }
-      td {
-	      border: solid 1px;
-	      padding: 0.5em;
-      }
+		background-color:#F0FFF0
+	  }
 
-	 h1{
-		margin: 0;
-		text-align: center;
-		background-color:#ff00ff;
+
+table {
+    width: 100%;
+}
+
+table tr th,
+table tr td {
+    padding: 0 10px;
+    border: 1px solid #DDD;
+    vertical-align: middle;
+	background-color:#FFFFFF
+}
+
+table tr th {
+    text-align: center;
+    font-weight: bold;
+}
+
+h1 {
+	position: relative;
+	color: #158b2b;
+	font-size: 40px;
+	padding: 10px 0;
+	text-align: center;
+	margin: 1.5em 0;
+	}
+
+h1:before {
+	content: "";
+	position: absolute;
+	top: -25px;
+	left: 49%;
+	width: 300px;
+	height: 116px;
+	border-radius: 50%;
+	border: 10px solid #a6ddb0;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	-moz-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	}
+h2{
+	position: relative;
+	padding: 0.5em;
+	background: #a6d3c8;
+	color: white;
+	}
+
+h2::before {
+	position: absolute;
+	content: '';
+	top: 100%;
+	left: 0;
+	border: none;
+	border-bottom: solid 10px transparent;
+	border-right: solid 15px rgb(149, 158, 155);
 	}
