@@ -1,7 +1,16 @@
-table {
-	border-collapse: collapse;
-}
-td {
-	border: solid 1px;
-	padding: 0.5em;
-}
+  body {
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
+      }
+      table {
+	      border-collapse: collapse;
+      }
+      td {
+	      border: solid 1px;
+	      padding: 0.5em;
+      }
+
+	 h1{
+		margin: 0;
+		text-align: center;
+		background-color:#ff00ff;
+	}
